@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #dfdfdf;
+}
+p {
+  font-weight: bold;
+}
+#fourNumbers {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+table {
+  position: relative;
+  margin: auto;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border-bottom: solid 3px #777;
+  padding: 10px 20px;
+}
+table td {
+  border-bottom: solid 1px #aaa;
+}
+table th:nth-child(1),
+table td:nth-child(1) {
+  font-size: 0.6em;
+  color: #666;
+}
+.error p span {
+  color: red;
+}
+.error input {
+  border: solid 2px red;
+  outline: none;
+  background: rgba(255, 140, 140, 0.5);
+}
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.win .modal {
+  height: 100vh;
+  opacity: 1;
+  visibility: visible;
+}
+.modal h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+.modal a {
+  background: orangered;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.modal a:hover {
+  background: rgb(173, 55, 12);
+}
