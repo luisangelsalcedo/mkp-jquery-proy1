@@ -20,7 +20,6 @@ $(() => {
       }
       // validar solo numeros y min 4 digitos
       if (!/[0-9]{4}/g.test(value)) {
-        console.log(value);
         contenedor.addClass("error");
         return;
       }
